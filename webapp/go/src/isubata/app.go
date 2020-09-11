@@ -17,6 +17,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/pkg/profile"
+
 	"github.com/go-sql-driver/mysql"
 	"github.com/gorilla/sessions"
 	"github.com/jmoiron/sqlx"
@@ -721,6 +723,8 @@ func tRange(a, b int64) []int64 {
 }
 
 func main() {
+	defer profile.Start().Stop()
+
 	e := echo.New()
 	funcs := template.FuncMap{
 		"add":    tAdd,
