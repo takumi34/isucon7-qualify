@@ -1,0 +1,3 @@
+[submodule "webapp/go/src/isubata/webapp/go/src/isubata/vendor/github.com/profile"]
+	path = webapp/go/src/isubata/webapp/go/src/isubata/vendor/github.com/profile
+	url = git@github.com:pkg/profile.git
