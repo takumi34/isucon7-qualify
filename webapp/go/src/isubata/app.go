@@ -723,7 +723,7 @@ func tRange(a, b int64) []int64 {
 }
 
 func main() {
-	defer profile.Start().Stop()
+	defer profile.Start(profile.ProfilePath("/home/isucon/profile")).Stop()
 
 	e := echo.New()
 	funcs := template.FuncMap{
